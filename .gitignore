@@ -1,0 +1,22 @@
+# Secrets & Environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies & Build
+node_modules/
+.bun/
+dist/
+build/
+.next/
+
+# Local Agent & Scratch State
+.antigravity/
+assets_nle/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db

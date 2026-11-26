@@ -1,0 +1,17 @@
+{
+  "name": "hyperxagent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Production multi-agent engineering harness and Google Antigravity plugin",
+  "scripts": {
+    "validate": "bun run scripts/validate-harness.mjs",
+    "install:target": "bun run scripts/install-harness.mjs",
+    "audit": "bun run .agents/skills/adversarial-qa/scripts/audit-static.mjs",
+    "plugin:check": "bun run scripts/validate-harness.mjs && agy plugin validate ."
+  },
+  "engines": {
+    "bun": ">=1.1.0",
+    "node": ">=20.0.0"
+  }
+}

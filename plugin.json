@@ -1,0 +1,32 @@
+{
+  "$schema": "https://antigravity.dev/schemas/plugin.v1.json",
+  "name": "hyperxagent",
+  "version": "1.0.0",
+  "description": "Zero-slop multi-agent engineering harness with 3-account Git worktree parallelism, strict type contracts, and adversarial mobile QA.",
+  "author": "Abinivesh S",
+  "license": "MIT",
+  "engines": {
+    "antigravity": ">=0.4.0",
+    "bun": ">=1.1.0"
+  },
+  "paths": {
+    "agents": ".agents/agents",
+    "skills": ".agents/skills",
+    "workflows": ".agents/workflows",
+    "mcpConfig": "mcp/mcp_config.template.json"
+  },
+  "capabilities": {
+    "subagents": true,
+    "workflows": true,
+    "skills": true,
+    "mcp": true
+  },
+  "tags": [
+    "multi-agent",
+    "worktree",
+    "nextjs",
+    "typescript",
+    "zero-cost",
+    "voice-ai"
+  ]
+}

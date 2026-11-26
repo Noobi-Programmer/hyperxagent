@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "bunx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "${WORKSPACE_ROOT}"
+      ],
+      "env": {}
+    },
+    "playwright": {
+      "command": "bunx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--headless",
+        "--viewport-size=390,844"
+      ],
+      "env": {
+        "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD": "0"
+      }
+    },
+    "context7": {
+      "command": "bunx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
+      "env": {}
+    },
+    "hyperx-audit": {
+      "command": "bun",
+      "args": [
+        "${PLUGIN_ROOT}/.agents/skills/adversarial-qa/scripts/audit-static.mjs",
+        "--mcp"
+      ],
+      "env": {}
+    }
+  }
+}

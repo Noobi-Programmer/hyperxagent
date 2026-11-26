@@ -1,0 +1,10 @@
+# .cursorrules — HyperXAgent Instructions for Cursor
+
+Follow `AGENTS.md` strictly as the global engineering constitution.
+
+1. Contract-First: Do not implement `src/app/api/*`, `src/lib/*`, or `src/components/*` until `plans/SPEC.md` and `src/types/contracts.ts` are locked.
+2. Zero-Slop & Strict Types: Never emit `any`, `@ts-ignore`, `TODO`, `FIXME`, or hardcoded secrets.
+3. File Ownership: Respect agent boundaries defined in `.agents/agents/*.md`.
+4. Skills & Workflows: Load relevant `.agents/skills/*/SKILL.md` instructions before acting.
+5. Research: Prefer native web search / MCP search / `context7` over search-engine UI scraping.
+6. Verification: Run `bun run validate` and `bun run audit` (and `bunx tsc --noEmit` in TypeScript projects) before finishing.
